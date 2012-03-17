@@ -31,6 +31,11 @@
 @purple:                #7a43b6;
 
 
+// Corporate Colors
+@ununiblue:             #147EFF;  // custom
+@ununipink:             #FF157D;  // custom
+
+
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
@@ -45,10 +50,10 @@
 
 // Typography
 // -------------------------
-@baseFontSize:          13px;
-@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@baseLineHeight:        18px;
-@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+@baseFontSize:          16px;  // custom 13px;
+@baseFontFamily:        "PT Serif", serif;  // custom "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        24px;  // custom 18px;
+@altFontFamily:         "PT Serif", serif;  // custom Georgia, "Times New Roman", Times, serif;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
@@ -139,7 +144,7 @@
 
 // Navbar
 // -------------------------
-@navbarHeight:                    40px;
+@navbarHeight:                    48px;  // custom 40px;
 @navbarBackground:                @grayDarker;
 @navbarBackgroundHighlight:       @grayDark;
 
@@ -182,16 +187,14 @@
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 
-
-
 // GRID
 // --------------------------------------------------
 
 // Default 940px grid
 // -------------------------
-@gridColumns:             12;
-@gridColumnWidth:         60px;
-@gridGutterWidth:         20px;
+@gridColumns:             20;  // custom 12;
+@gridColumnWidth:         24px;  // custom 60px;
+@gridGutterWidth:         24px;  // custom 20px;
 @gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 
 
